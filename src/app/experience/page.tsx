@@ -15,7 +15,7 @@ type ExperienceData = {
 const data: ExperienceData[] = [
     {
         title: "Full Stack Web Developer Intern",
-        description: "During my internship at Dehix Org, I contributed to the development and maintenance of web applications by working on both front-end and back-end components. I gained hands-on experience with technologies such as Next JS, Fastify, AWS, collaborated closely with the development team to implement new features, optimize performance, and improve user experience.",
+        description: "During my internship at Dehix Org, I contributed to the development and maintenance of web applications by working on both front-end and back-end components. I gained hands-on experience with technologies such as Next JS, Fastify, AWS.",
         duration: "4 Months",
         type: "Internship",
         org: "Dehix Org.",
@@ -31,7 +31,7 @@ const data: ExperienceData[] = [
     },
     {
         title: "Freelance Developer",
-        description: "As a freelance developer for Samaira Fashion, I independently managed the end-to-end development of their web platform. I crafted seamless, user-friendly interfaces and implemented backend solutions to support smooth e-commerce operations. This role honed my skills in client communication, project management, and delivering customized web solutions that align with brand identity and business goals.",
+        description: "As a freelance developer for Samaira Fashion, I independently managed the end-to-end development of their web platform. I crafted seamless, user-friendly interfaces and implemented backend solutions to support smooth e-commerce operations.",
         duration: "3 Months",
         type: "Freelancing",
         org: "Samaira Fashion",
@@ -40,9 +40,9 @@ const data: ExperienceData[] = [
 ]
 export default function Experience() {
     return (
-        <Container className="flex flex-col items-center justify-start gap-6">
-                <Heading text="Experience" />
-            <div className="flex items-center justify-between w-[85%]">
+        <Container className="flex flex-col items-center justify-start gap-0">
+            <Heading text="Experience" />
+            <div className="flex items-center justify-between w-[90%]">
                 {
                     data.map(({ title, description, duration, org, type, techstack }, index) =>
                         <div key={index} className="max-w-md bg-[#2a2a42] hover:shadow-[#ff004f] shadow-lg border-2 duration-500 cursor-pointer border-transparent transition-colors rounded-lg p-6 mb-6 h-[70vh]">
@@ -62,11 +62,18 @@ export default function Experience() {
                             <p className="text-gray-300 text-base leading-relaxed">{description}</p>
 
                             <h4 className="mt-4"><TextHighlight text="Tech Stack Worked On: " /></h4>
-                            <ul className="px-8 list-disc marker:text-[#ff004f]">
+                            <div className="w-full flex items-center justify-center flex-wrap">
                                 {
-                                    techstack.map(tech => <li key={tech} className="text-gray-200">{tech}</li>)
+                                    techstack.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="text-xs bg-[#ff004f]/20 text-[#ff004f] px-3 py-1 m-1 rounded-full"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))
                                 }
-                            </ul>
+                            </div>
                         </div>
                     )
                 }

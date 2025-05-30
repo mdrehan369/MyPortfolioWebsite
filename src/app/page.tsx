@@ -19,7 +19,7 @@ export default function Home() {
                     <p>Welcome to my corner of Web! I’m MD Rehan, a Full Stack Web Developer with a flair for crafting digital experiences that are both functional and beautiful. With a love for all things JavaScript, I dive deep into both the front-end and back-end to build seamless web applications.
                     </p>
                     <div className="my-4">
-                        <Button>Download Resume</Button>
+                        <Button><a href={"/docs/MdRehanResume.pdf"} target="__blank" rel={"noopener noreferrer"}>Download Resume</a></Button>
                     </div>
                 </div>
                 <Image width={400} height={400} alt="" src={"/images/face.png"} />

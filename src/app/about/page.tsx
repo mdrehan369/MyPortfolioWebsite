@@ -7,8 +7,8 @@ export default function About() {
             <div className="flex flex-col items-center justify-start gap-6">
                 <Heading text="About" />
                 <div>
-                    <section className="max-w-4xl mx-auto px-6 py-12">
-                        <h2 className="text-4xl font-bold mb-6 text-center text-white">👋 Hello, World!</h2>
+                    <section className="max-w-4xl px-6 py-8">
+                        <h2 className="text-4xl font-bold mb-6 text-center text-white">Hello, World!</h2>
                         <p className="text-lg mb-8 text-gray-300 text-center">
                             I&apos;m <span className="font-semibold text-white">MD Rehan</span>, a passionate{' '}
                             <span className="text-[#ff004f]">Full Stack Web Developer</span> from Kolkata, India.
@@ -16,7 +16,7 @@ export default function About() {
                             front-end and back-end technologies to build functional and beautiful digital solutions.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0">
                             <div>
                                 <h3 className="text-2xl font-semibold mb-4 text-[#ff004f]">🛠️ Skills &amp; Expertise</h3>
                                 <ul className="list-disc list-inside space-y-2 text-gray-300">
@@ -26,7 +26,7 @@ export default function About() {
                                 </ul>
                             </div>
                             <div>
-                                <h3 className="text-2xl font-semibold mb-4 text-[#ff004f]">🚀 Current Endeavors</h3>
+                                <h3 className="text-2xl font-semibold mb-0 text-[#ff004f]">🚀 Current Endeavors</h3>
                                 <ul className="list-disc list-inside space-y-2 text-gray-300">
                                     <li>Contributing to open source and building innovative apps</li>
                                     <li>Developing full-stack projects like e-commerce and blogs</li>
