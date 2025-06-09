@@ -41,7 +41,7 @@ const projects = [
 export default function Projects() {
     return (
         <Container>
-            <section className="max-w-6xl mx-auto px-4 py-0 flex flex-col items-center">
+            <section className="max-w-6xl mx-auto px-4 md:pb-0 pb-10 flex flex-col items-center">
                 <Heading text="Projects" />
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map(({ id, title, description, techStack, repoLink }) => (

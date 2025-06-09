@@ -40,9 +40,9 @@ const data: ExperienceData[] = [
 ]
 export default function Experience() {
     return (
-        <Container className="flex flex-col items-center justify-start gap-0">
+        <Container className="flex flex-col items-center justify-start gap-0 md:pb-0 pb-10">
             <Heading text="Experience" />
-            <div className="flex items-center justify-between w-[90%]">
+            <div className="flex md:flex-row flex-col items-center justify-between w-[90%]">
                 {
                     data.map(({ title, description, duration, org, type, techstack }, index) =>
                         <div key={index} className="max-w-md bg-[#2a2a42] hover:shadow-[#ff004f] shadow-lg border-2 duration-500 cursor-pointer border-transparent transition-colors rounded-lg p-6 mb-6 h-[70vh]">
